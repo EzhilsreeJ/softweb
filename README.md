@@ -183,37 +183,6 @@ Publish the website in the given URL.
   </div>
 </div>
 </section>
-
-<!--------Call to action------->
-
-<section class="cta">
-  <h1>Enroll for our various online courses <br>Anywhere from the World</h1>
-  <a href="contact.html" class="hero-btn">CONTACT US</a>
-</section>
-
-<!--------Footer------->
-
-<section class="footer">
-
-  <div class="icons">
-    <i class="fa fa-facebook-square"></i>
-    <i class="fa fa-twitter"></i>
-    <i class="fa fa-instagram"></i>
-    <i class="fa fa-linkedin"></i>
-  </div>
-  <p>Made By <i class="fa fa-heart-o"></i> Ezhil Sree </p>
-</section>
-
-<!--JAVASCRIPT for menu-->
-    <script>
-      var navLinks=document.getElementById("navLinks");
-      function showMenu(){
-        navLinks.style.right="0"
-      }
-      function hideMenu(){
-        navLinks.style.right="-200px"
-      }
-    </script>
   </body>
 </html>
 
@@ -259,30 +228,6 @@ nav img{
   flex: 1;
   text-align: right;
 }
-.nav-links ul li{
-  list-style: none;
-  display: inline-block;
-  padding: 8px 12px;
-  position: relative;
-}
-.nav-links ul li a{
-  color: #fff;
-  text-decoration: none;
-  font: size 13px;
-}
-.nav-links ul li::after{
-  content: '';
-  width: 0%;
-  height: 2px;
-  background: #d46464;
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-.nav-links ul li:hover::after{
-  width: 100%;
-  
-}
 .text-box{
   width: 90%;
   color: #fff;
@@ -311,15 +256,7 @@ nav img{
   position: relative;
   cursor: pointer;
 }
-.hero-btn:hover{
-border: 1px solid #e3a469;
-background: #d46464;
-transition: 0.8s;
-}
 
-nav .fa{
-  display: none;
-}
 @media(max-width: 700px){
   .text-box h1{
     font-size: 18px;
@@ -350,16 +287,7 @@ nav .fa{
 
 /*----Course-----*/
 
-.course{
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 100px;
-}
-h1{
-  font-size: 36px;
-  font-weight: 600;
-}
+
 p{
   color: #777;
   font-size: 14px;
@@ -414,30 +342,11 @@ h3{
   height: 630px;
   display: block;
 }
-.layer{
-  background: transparent;
-  height: 100%;
-  width: 100%;
-  position:absolute;
-  top:0;
-  left: 0;
-  transition: 0.5s;
-}
+
 .layer:hover{
   background: #d46464;
 }
-.layer h3{
-  width: 100%;
-  font-weight: 500;
-  color: #fff;
-  font-size: 26px;
-  bottom: 0;
-  left:50%;
-  transform: translateX(-50%);
-  position: absolute;
-  opacity: 0;
-  transition: 0.5s;
-}
+
 .layer:hover h3{
   bottom: 49%;
   opacity: 1;
@@ -458,17 +367,7 @@ h3{
   text-align: left;
   
 }
-.facilities-col:hover{
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}
-.facilities-col img{
-  width: 100%;
-  height: 300px;
-  border-radius: 10px;
-}
-.facilities-col p{
-  padding: 0;
-}
+
 .facilities-col h3{
   margin-top: 16px;
   margin-bottom: 15px;
@@ -496,285 +395,13 @@ h3{
   display: flex;
   transition: 0.5s;
 }
-.testimonial-col:hover{
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}
 
-.testimonial-col img{
-  height: 40px;
-  padding-top: 10px;
-  margin-left: 5px;
-  margin-right: 30px;
-  border-radius: 50%;
-}
-.testimonial-col p{
-  padding-top: 10px;
-}
-.testimonial-col h3{
-  margin-top: 15px;
-}
-.testimonial-col .fa{
-  color: aqua;
-}
 @media(max-width: 700px){
   .testimonial-col img{
     margin-left: 0;
     margin-right: 15px;
  
   }
-}
-
-/*---- call to action---*/
-
-.cta{
-  margin: 100px auto;
-  width: 80%;
-  background-image: linear-gradient(rgb(0,0,0,0.7),rgba(0,0,0,0.7)),url("bg1.jpg");
-  background-position: center;
-  background-size: cover;
-  border-radius: 10px;
-  text-align: center;
-  padding:100px 0;
-}
-.cta h1{
-  color: #fff;
-  margin-bottom: 40px;
-  padding: 0;
-}
-
-@media(max-width:700px){
-  .cta h1{
-    font-size: 24px;
-  }
-}
-
-
-/*-------------------Footer-------------------*/
-
-.footer{
-  width: 100%;
-  text-align: center;
-  padding: 30px 0;
-}
-.footer h4{
-  margin-bottom: 25px;
-  margin-top: 20px;
-  font-weight: 600;
-}
-.icons .fa{
-  color: #d46464;
-  margin: 0 13px;
-  cursor: pointer;
-  padding: 18px 0;
-}
-.fa-heart-o{
-  color: #d46464;
-}
-
-/*----------------about us page-------------*/
-
-.sub-header{
-  height: 50vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("bg2.jfif");
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  color: #fff;
-}
-.sub-header h1{
-  margin-top: 100px;
-
-}
-.about-us{
-  width:80%;
-  margin: auto;
-  padding-top: 80px;
-  padding-bottom: 50px;
-}
-.about-col{
-  flex-basis: 48%;
-  padding:30px 2px
-}
-.about-col img{
-  width: 100%;
-}
-.about-col h1{
-  padding-top: 0;
-}
-.about-col p{
-  padding: 15px 0 25px;
-}
-
-.red-btn{
-  border: 1px solid #d46464;
-  background: transparent;
-  color: #d46464;
-}
-.red-btn:hover{
-  color: #fff;
-}
-
-/*-----------blog-content--------------*/
-
-.blog-content{
-  width: 80%;
-  margin: auto;
-  padding: 60px 0;
-}
-.blog-left{
-  flex-basis: 65%;
-}
-.blog-left img{
-  width: 100%;
-}
-.blog-left h2{
-  color: #222;
-  font-weight: 600;
-  margin: 30px 0;
-}
-.blog-left p{
-  color: #999;
-  padding:0;
-}
-.blog-right{
-  flex-basis:32% ;
-}
-.blog-right h3{
-  background: #d46464;
-  color: #fff;
-  padding: 7px 0;
-  font-size:16px ;
-  margin-bottom: 20px;
-}
-.blog-right div{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #555;
-  padding: 8px;
-  box-sizing: border-box;
-}
-
-.comment-box{
-  border: 1px solid #ccc;
-  margin: 50px 0;
-  padding: 10px 20px;
-}
-.comment-box h3{
-  text-align: left;
-}
-.comment-form input, .comment-form textarea{
-  width: 100%;
-  padding: 10px;
-  margin: 15px 0;
-  box-sizing: border-box;
-  border: none;
-  outline: none;
-  background: #f0f0f0;
-}
-.comment-form button{
-  margin: 10px 0;
-}
-
-@media(max-width:700px){
-  .sub-header h1{
-    font-size: 24px;
-  }
-}
-
-/*----------- contact us---------------*/
-
-
-
-.location{
-  width: 80%;
-  margin: auto;
-  padding: 80px 0;
-}
-.location iframe{
-  width: 100%;
-}
-
-.contact-us{
-  width:80%;
-  margin: auto;
-}
-
-.contact-col{
-  flex-basis: 48%;
-  margin-bottom: 30px;
-}
-.contact-col div{
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
-}
-.contact-col div .fa{
-  font-size: 28px;
-  color: #d46464;
-  margin: 10px;
-  margin-right: 30px;
-}
-.contact-col div p{
-  padding: 0;
-}
-.contact-col div h5{
-  font-size: 20px;
-  margin-bottom: 5px;
-  color: #555;
-  font-weight: 400;
-}
-.contact-col input, .contact-col textarea{
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 17px;
-  outline: none;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-
-
-
-.login-col{
-  margin-top: 100px;
-  width: 350px;
-  margin-left: 100px;
- 
-  flex-basis: 48%;
-  margin-bottom: 30px;
-}
-.login-col  h5{
-  font-size: 20px;
-  margin-bottom: 5px;
-  color: #555;
-  font-weight: 400;
-}
-.login-col input, .contact-col textarea{
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 17px;
-  outline: none;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-.login1{
-  margin-top: 10px;
-  margin-left: 70px;
-}
-.login1 p{
-  font-weight: 600;
-}
-.login2{
-  margin-left: 30px;
-}
-.profile{
-  border-radius: 50%;
-  width: 90px;
-  /* height: 90px; */
-  margin-right: 10px;
 }
 ```
 
